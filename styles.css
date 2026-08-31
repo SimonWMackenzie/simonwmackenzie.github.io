@@ -34,3 +34,6 @@
 /* The supplied portrait complements the introduction without replacing it. */
 .profile-photo{display:block;width:240px;height:240px;max-width:100%;margin-top:26px;object-fit:cover;object-position:center 35%;border-radius:3px}
 @media(max-width:650px){.hero-identity{display:grid;grid-template-columns:minmax(0,1fr) 104px;column-gap:18px;align-items:start}.hero-identity>.eyebrow,.hero-identity>h1{grid-column:1 / -1}.hero-identity>h1{font-size:clamp(48px,10vw,65px)}.hero-identity>.role{grid-column:1}.profile-photo{grid-column:2;width:104px;height:104px;margin-top:0}}
+
+/* Make the job-market announcement easy to spot. */
+.hero-note{color:#9f3030;font-size:13px}.hero-note .eyebrow,.hero-note a{color:inherit}.hero-note>span:last-child{font-weight:500}
