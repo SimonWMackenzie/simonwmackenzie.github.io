@@ -25,8 +25,8 @@
 /* A small related-work note, subordinate to the research and paper lists. */
 .research-aside{margin-top:29px;padding-top:22px;border-top:1px solid var(--line);max-width:82ch;scroll-margin-top:30px}.research-aside h3{font:500 14px/1.6 var(--sans);margin-bottom:8px}.research-aside p{font-size:13px;line-height:1.85;color:var(--muted)}
 
-/* Academic context stays quieter than the research introduction. */
-.intro p.academic-context{font-size:13px;line-height:1.85;margin-top:17px}
+/* Separate the biography from the research results. */
+.intro-biography{margin-top:34px;padding-top:24px;border-top:1px solid var(--line)}.intro-biography h2{font:500 14px/1.6 var(--sans);margin:0 0 10px;color:var(--ink)}.intro p.academic-context{font-size:13px;line-height:1.85;margin-top:0}.intro-biography .text-links{margin-top:20px}
 
 /* Separate research coverage from outreach contributions. */
 .media-coverage{max-width:82ch}.outreach-content .video-links{margin-top:0}
