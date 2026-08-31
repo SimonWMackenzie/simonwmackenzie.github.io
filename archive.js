@@ -11,7 +11,7 @@ function applyFilters(){
   let visible=0;
   for(const paper of papers){const matches=(topic==='all'||paper.dataset.topic===topic)&&words.every(word=>norm(paper.dataset.search).includes(word));paper.hidden=!matches;if(matches)visible++;}
   for(const group of groups)group.hidden=![...group.querySelectorAll('[data-paper]')].some(p=>!p.hidden);
-  count.textContent=visible+' of '+papers.length+' works';empty.hidden=visible>0;
+  count.textContent=visible+' of '+papers.length+' entries';empty.hidden=visible>0;
   for(const button of filters)button.setAttribute('aria-pressed',String(button.dataset.filter===topic));
   const url=new URL(location.href);if(topic==='all')url.searchParams.delete('topic');else url.searchParams.set('topic',topic);if(search.value.trim())url.searchParams.set('q',search.value.trim());else url.searchParams.delete('q');
   try{history.replaceState(null,'',url);}catch{}

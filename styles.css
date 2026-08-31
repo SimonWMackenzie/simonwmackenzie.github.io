@@ -41,6 +41,21 @@
 /* Keep awards readable but secondary to the academic background. */
 .awards{margin-bottom:28px;scroll-margin-top:30px}.awards h3{font:500 14px/1.7 var(--sans);margin-bottom:8px}.award-list{display:grid;grid-template-columns:1fr;gap:6px;list-style:none;margin:0;padding:0;font:13px/1.7 var(--sans)}.award-year{font-size:12px;color:var(--muted);margin-right:9px}.award-list strong{display:inline;font-weight:500;color:var(--ink)}.award-context{display:inline;margin-left:6px;color:var(--muted)}.award-context::before{content:"("}.award-context::after{content:")"}
 
+/* Let visitors entering through Publications see the results before the bibliography. */
+.archive-highlights{padding-bottom:35px;margin-bottom:34px;border-bottom:1px solid var(--line)}
+.archive-highlights>h2,.archive-bibliography>h2{font-size:26px;line-height:1.3;letter-spacing:-.5px}
+.archive-highlights .result-summary{grid-template-columns:repeat(3,minmax(0,1fr));gap:25px;margin-top:23px}
+.archive-highlights .result-summary li+li{border-top:0;border-left:1px solid var(--line);padding-top:0;padding-left:25px}
+.programme-connection{margin-top:25px;font-size:13px;color:var(--muted)}
+.archive-bibliography>h2{margin-bottom:23px}
+.archive-bibliography>.archive-footer{padding-bottom:30px}
+.archive-group>h2 span{letter-spacing:.5px}
+.paper-area{font:11px/1.6 var(--sans);color:var(--accent);margin-bottom:6px}
+@media(max-width:900px){
+  .archive-highlights .result-summary{grid-template-columns:1fr;gap:18px}
+  .archive-highlights .result-summary li+li{border-left:0;border-top:1px solid var(--line);padding-left:0;padding-top:18px}
+}
+
 
 /* Put results and their authors together in the opening summary. */
 .result-summary{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:15px}.result-summary li+li{border-top:1px solid var(--line);padding-top:15px}.result-statement{display:block;font:500 16px/1.6 var(--sans);color:var(--ink);text-decoration:none}.result-statement:hover{text-decoration:underline}.result-context{display:block;margin-top:6px;font:13px/1.65 var(--sans);color:var(--muted)}.result-authors{display:block;margin-top:5px;font:12px/1.6 var(--sans);color:var(--muted)}.result-authors strong{font-weight:600;color:var(--ink)}.result-status{font:500 11px/1.6 var(--sans);color:var(--accent);white-space:nowrap}
