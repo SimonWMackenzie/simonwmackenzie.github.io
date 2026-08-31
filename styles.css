@@ -60,3 +60,43 @@
 /* Put results and their authors together in the opening summary. */
 .result-summary{list-style:none;margin:22px 0 0;padding:0;display:grid;gap:15px}.result-summary li+li{border-top:1px solid var(--line);padding-top:15px}.result-statement{display:block;font:500 16px/1.6 var(--sans);color:var(--ink);text-decoration:none}.result-statement:hover{text-decoration:underline}.result-context{display:block;margin-top:6px;font:13px/1.65 var(--sans);color:var(--muted)}.result-authors{display:block;margin-top:5px;font:12px/1.6 var(--sans);color:var(--muted)}.result-authors strong{font-weight:600;color:var(--ink)}.result-status{font:500 11px/1.6 var(--sans);color:var(--accent);white-space:nowrap}
 @media(max-width:650px){.result-summary{margin-top:18px;gap:13px}.result-summary li+li{padding-top:13px}.result-statement{font-size:15px}}
+
+/* The selected research profile: results first, with distinct biography and current work. */
+.research-profile .hero{padding-top:52px;padding-bottom:52px;column-gap:58px;row-gap:0;grid-template-rows:auto 1fr}
+.research-profile .hero-identity{grid-column:1;grid-row:1}
+.research-profile .intro{padding-top:21px;grid-column:2;grid-row:1 / span 2}
+.research-profile .intro .lead{font-size:24px;line-height:1.45}
+.research-profile .intro p.achievement{font:500 25px/1.45 var(--serif);letter-spacing:-.3px;color:var(--ink);margin:22px 0 25px}
+.research-profile .results-heading{font:600 12px/1.6 var(--sans);color:var(--accent);letter-spacing:.3px}
+.research-profile .result-summary{counter-reset:result;margin-top:16px;gap:18px}
+.research-profile .result-summary>li{counter-increment:result;position:relative;padding-left:29px}
+.research-profile .result-summary>li::before{content:counter(result,decimal-leading-zero);position:absolute;left:0;top:4px;font:11px/1.6 var(--sans);color:var(--accent)}
+.research-profile .result-summary>li+li{padding-top:18px}
+.research-profile .result-summary>li+li::before{top:22px}
+.research-profile .result-statement{font-size:16px;font-weight:600}
+.research-profile .result-context{font-size:12px}
+.research-profile .thesis-connection{margin-top:9px}
+.research-profile .hero-identity .hero-note{display:block;margin-top:25px;padding-top:17px}
+.research-profile .hero-identity .hero-note .eyebrow{display:block;margin-bottom:5px}
+.research-profile .hero>.intro-biography{grid-column:1;grid-row:2;margin-top:22px;padding-top:20px}
+.research-profile .intro-biography .academic-context{font-size:13px;line-height:1.85;color:var(--muted)}
+.research-profile .intro-biography .text-links{gap:10px 19px;font-size:12px}
+.research-profile .research-now{margin-top:27px;padding-top:22px;border-top:1px solid var(--line)}
+.research-profile .research-now h2{font:600 13px/1.6 var(--sans);color:var(--ink);margin-bottom:8px}
+.research-profile .intro .research-now p{font:13px/1.8 var(--sans);color:var(--muted);margin-top:0}
+.research-profile .intro .research-now p+p{margin-top:11px}
+.research-profile .recent-results-link{display:inline-block;margin-top:13px;font-size:12px;color:var(--accent)}
+@media(max-width:900px){
+  .research-profile .hero{column-gap:36px}
+  .research-profile .intro p.achievement{font-size:23px}
+}
+@media(max-width:650px){
+  .research-profile .hero{padding-top:31px;gap:29px;grid-template-rows:auto}
+  .research-profile .hero-identity .hero-note{grid-column:1 / -1}
+  .research-profile .hero>.intro-biography{grid-column:1;grid-row:3;margin-top:0}
+  .research-profile .intro{padding-top:0;grid-column:1;grid-row:2}
+  .research-profile .intro .lead{font-size:22px}
+  .research-profile .intro p.achievement{font-size:24px;margin-top:20px}
+  .research-profile .result-statement{font-size:15px}
+  .research-profile .result-summary>li{padding-left:26px}
+}
