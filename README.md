@@ -1,2 +1,5 @@
-# simonwmackenzie.github.io
-Simon Mackenzie — academic website, research, publications, teaching, and CV.
+# Simon Mackenzie
+
+Academic website: https://simonwmackenzie.github.io/
+
+This repository contains the published website and CV.

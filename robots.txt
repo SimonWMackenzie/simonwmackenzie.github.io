@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://simonwmackenzie.github.io/sitemap.xml
