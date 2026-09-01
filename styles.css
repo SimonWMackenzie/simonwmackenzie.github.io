@@ -91,6 +91,9 @@ small{font-size:inherit}
 .research-profile .intro .research-now p{color:var(--muted);margin-top:0}
 .research-profile .intro .research-now p+p{margin-top:11px}
 .research-profile .recent-results-link{display:inline-block;margin-top:13px;color:var(--accent)}
+@media(min-width:901px){
+  .research-profile .hero{grid-template-columns:330px minmax(0,1fr);column-gap:42px}
+}
 @media(max-width:900px){
   .research-profile .hero{column-gap:36px}
 }
