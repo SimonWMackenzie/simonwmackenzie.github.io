@@ -1,4 +1,4 @@
-:root{--paper:#f7f6f1;--surface:#efeee7;--ink:#252d2a;--muted:#656d66;--accent:#355b48;--line:#d9dcd2;--warm:#a96c43;--serif:Georgia,'Times New Roman',serif;--sans:'Segoe UI',Arial,sans-serif;color-scheme:light}
+:root{--paper:#f7f6f1;--surface:#efeee7;--ink:#252d2a;--muted:#656d66;--accent:#355b48;--line:#d9dcd2;--warm:#a96c43;--serif:Georgia,'Times New Roman',serif;--sans:system-ui,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color-scheme:light}
 
 /* One typography system: two families, three sizes, five treatments. */
 :root{--type-display:clamp(48px,6vw,64px);--type-heading:26px;--type-body:15px}
